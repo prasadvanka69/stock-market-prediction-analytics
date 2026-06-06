@@ -1,0 +1,12 @@
+import pandas as pd
+df = pd.read_csv("data/apple_stock.csv")
+print("=" * 50)
+print("DATASET SHAPE")
+print("=" * 50)
+print(df.shape)
+print("\nCOLUMN NAMES")
+print(df.columns.tolist())
+print("\nMISSING VALUES")
+print(df.isnull().sum())
+print("\nSUMMARY STATISTICS")
+print(df.describe())
